@@ -225,6 +225,8 @@ cd() {
         [[ "${GVM_DEBUG}" -eq 1 ]] && echo "No fallback pkgset could be found."
     fi
 
+    builtin cd $*
+
     return 0
 }
 
